@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Produkter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Produktliste</h1>
+        <table>
+            <thead>
+            <th>ID</th>
+            <th>Produktnavn</th>
+            <th>Pris</th>
+            </thead>
+            <tbody>
+            <tr th:each="product: ${products}">
+                <td th:text="${product.id}">
+                    42
+                </td>
+                <td th:text="${product.name}">
+                    meningen med livet
+                </td>
+                <td th:text="${product.price}">
+                    666
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
