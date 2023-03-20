@@ -11,8 +11,8 @@ import java.util.List;
 public class ProductRepository {
 
     //database-properties
-    private final  String DB_URL ="jdbc:mysql://localhost:3306/webshopdat22b";
-    private final  String UID ="root";
+    private final  String DB_URL ="jdbc:mysql://jaco170wmysql.mysql.database.azure.com:3306/webshopdat22b";
+    private final  String UID ="jaco170w";
     private final  String PWD ="K16b6tw#12345";
 
     public List<Product> getAll() {
